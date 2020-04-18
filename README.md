@@ -183,10 +183,10 @@ Obs: No IOS ele funciona de forma global como mostrado no exemplo acima. No Andr
 <img alt="Fastfeet" title="Fastfeet" src="assets/web2.png" width="100%" />
 <img alt="Fastfeet" title="Fastfeet" src="assets/web3.png" width="100%" />
 <div>
-<img alt="Fastfeet" title="Fastfeet" src="assets/mobile4.png" width="250px" style="display:inline" />
-<img alt="Fastfeet" title="Fastfeet" src="assets/mobile2.png" width="250px" style="display:inline" />
-<img alt="Fastfeet" title="Fastfeet" src="assets/mobile1.png" width="250px" style="display:inline"/>
-<img alt="Fastfeet" title="Fastfeet" src="assets/mobile3.png" width="250px" style="display:inline"/>
+<img alt="Fastfeet" title="Fastfeet" src="assets/mobile4.png" width="200px" style="display:inline" />
+<img alt="Fastfeet" title="Fastfeet" src="assets/mobile2.png" width="200px" style="display:inline" />
+<img alt="Fastfeet" title="Fastfeet" src="assets/mobile1.png" width="200px" style="display:inline"/>
+<img alt="Fastfeet" title="Fastfeet" src="assets/mobile3.png" width="200px" style="display:inline"/>
 <div>
 
 
