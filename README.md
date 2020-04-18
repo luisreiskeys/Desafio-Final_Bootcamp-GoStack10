@@ -163,7 +163,7 @@ dispatch(
   )
 );
 ```
-Obs: No IOS ele funciona de forma global como mostrado no exemplo acima. No Android o component precisa ser adicionado em cada página onde será executado. Nessa entrega estou enviando a configuração do IOS porque foi como eu desenvolvi toda a aplicação. Assim que esse erro for corrigido esse repositório será atualizado.
+
 
 <h1 align="center">
   <img alt="Fastfeet" title="Fastfeet" src="assets/toast.gif" width="300px" />
