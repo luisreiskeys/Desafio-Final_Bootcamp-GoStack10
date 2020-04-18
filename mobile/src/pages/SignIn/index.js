@@ -12,6 +12,7 @@ import {
 } from './styles';
 
 import { signInRequest } from '../../store/modules/auth/actions';
+import { showToast } from '../../store/modules/toast/actions';
 
 export default function SignIn() {
   const dispatch = useDispatch();
@@ -21,8 +22,15 @@ export default function SignIn() {
   const [idCad, setIdCad] = useState('');
 
   function handleSubmit() {
+    if (idCad === '') {
+      dispatch(
+        showToast('error', 'Preencha o Id de cadastro para acessar a aplicação')
+      );
+      return;
+    }
     dispatch(signInRequest(idCad));
   }
+
   return (
     <Container>
       <Content>
