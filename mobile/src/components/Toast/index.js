@@ -121,21 +121,19 @@ export default function Toast(props) {
   }
 
   return (
-    <View style={{ ...zIndex(100) }}>
+    <Animated.View
+      style={[
+        styles(dinamicStyle)[dinamicStyle.type],
+        { ...zIndex(100), transform: [{ translateY: pos }] },
+      ]}
+    >
+      <View style={styles(dinamicStyle).msgContainer}>
+        <Text style={styles(dinamicStyle).txt}>{msg}</Text>
+      </View>
       <Animated.View
-        style={[
-          styles(dinamicStyle)[dinamicStyle.type],
-          { transform: [{ translateY: pos }] },
-        ]}
-      >
-        <View style={styles(dinamicStyle).msgContainer}>
-          <Text style={styles(dinamicStyle).txt}>{msg}</Text>
-        </View>
-        <Animated.View
-          style={[styles(dinamicStyle).border, { left: leftBorder }]}
-        />
-      </Animated.View>
-    </View>
+        style={[styles(dinamicStyle).border, { left: leftBorder }]}
+      />
+    </Animated.View>
   );
 }
 
