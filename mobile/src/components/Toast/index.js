@@ -1,6 +1,6 @@
 /* eslint-disable react/destructuring-assignment */
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, Dimensions } from 'react-native';
+import { View, Text, StyleSheet, Dimensions, Platform } from 'react-native';
 import Animated, { Easing } from 'react-native-reanimated';
 import { useSelector, useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
