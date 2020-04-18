@@ -134,8 +134,8 @@ react-native run-ios
 
 ### Opcionais desenvolvidos no mobile
 
-- Toast. Desenvolvi um Toast inspirado no toastfy usado na web. O Toast foi adicionado no index do projeto.
 - A opção de retirar a encomenda eu coloquei no canto superior direito do card da encomenda, na listagem das encomendas como se pode ver na primeira imagens das capturas de tela ao final desse documento.
+- Toast. Desenvolvi um Toast inspirado no toastfy usado na web. O Toast foi adicionado no index do projeto.
 
 ```
 <Provider store={store}>
