@@ -145,11 +145,11 @@ Obs: No IOS ele funciona de forma global como mostrado no exemplo acima. No Andr
 </h1>
 
 ## Capturas de telas
-<img alt="Fastfeet" title="Fastfeet" src="assets/web2.png" width="300px" />
-<img alt="Fastfeet" title="Fastfeet" src="assets/web3.png" width="300px" />
-<img alt="Fastfeet" title="Fastfeet" src="assets/mobile2.png" width="300px" />
-<img alt="Fastfeet" title="Fastfeet" src="assets/mobile1.png" width="300px" />
-<img alt="Fastfeet" title="Fastfeet" src="assets/mobile3.png" width="300px" />
+<img alt="Fastfeet" title="Fastfeet" src="assets/web2.png" width="100%" />
+<img alt="Fastfeet" title="Fastfeet" src="assets/web3.png" width="100%" />
+<img alt="Fastfeet" title="Fastfeet" src="assets/mobile2.png" width="300px" style="display:inline" />
+<img alt="Fastfeet" title="Fastfeet" src="assets/mobile1.png" width="300px" style="display:inline"/>
+<img alt="Fastfeet" title="Fastfeet" src="assets/mobile3.png" width="300px" style="display:inline"/>
 
 
 ## 📝 Licença
