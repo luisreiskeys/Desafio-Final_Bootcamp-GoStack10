@@ -1,19 +1,24 @@
 import styled from 'styled-components/native';
 
-export const Container = styled.View`
-  background: #fff;
+export const Container = styled.SafeAreaView`
+  background: #7d40e7;
+  flex: 1;
+`;
+
+export const BG = styled.View`
+  background-color: #fff;
   flex: 1;
 `;
 
 export const TopBg = styled.View`
   background: #7d40e7;
-  height: 155px;
+  height: 150px;
 `;
 
 export const Content = styled.View`
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: -60px;
+  margin-top: -95px;
 `;
 
 export const Title = styled.Text`
@@ -55,6 +60,6 @@ export const ProblemDate = styled.Text`
 export const Empty = styled.Text`
   font-size: 16px;
   color: #999;
-  margin-top: 60px;
+  margin-top: 95px;
   text-align: center;
 `;

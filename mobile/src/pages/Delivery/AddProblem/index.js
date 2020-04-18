@@ -4,7 +4,14 @@ import PropTypes from 'prop-types';
 
 import api from '../../../services/api';
 
-import { Container, TopBg, Content, TextArea, SubmitButton } from './styles';
+import {
+  Container,
+  TopBg,
+  BG,
+  Content,
+  TextArea,
+  SubmitButton,
+} from './styles';
 
 import { showToast } from '../../../store/modules/toast/actions';
 
@@ -33,14 +40,16 @@ export default function AddProblem({ route, navigation }) {
   return (
     <Container>
       <TopBg />
-      <Content>
-        <TextArea
-          placeholder="Inlua aqui o problema que ocorreu na entrega"
-          value={problem}
-          onChangeText={setProblem}
-        />
-        <SubmitButton onPress={handleSubmit}>Enviar</SubmitButton>
-      </Content>
+      <BG>
+        <Content>
+          <TextArea
+            placeholder="Inclua aqui o problema que ocorreu na entrega"
+            value={problem}
+            onChangeText={setProblem}
+          />
+          <SubmitButton onPress={handleSubmit}>Enviar</SubmitButton>
+        </Content>
+      </BG>
     </Container>
   );
 }

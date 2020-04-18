@@ -1,19 +1,26 @@
 import styled from 'styled-components/native';
 
-export const Container = styled.View`
-  background: #fff;
+export const Container = styled.SafeAreaView`
+  background: #7d40e7;
   flex: 1;
 `;
 
 export const TopBg = styled.View`
   background: #7d40e7;
-  height: 155px;
+  height: 150px;
 `;
 
-export const Content = styled.View`
+export const BG = styled.View`
+  background-color: #fff;
+  flex: 1;
+`;
+
+export const Content = styled.ScrollView.attrs({
+  showsVerticalScrollIndicator: false,
+})`
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: -40px;
+  margin-top: -75px;
 `;
 
 export const Card = styled.View`

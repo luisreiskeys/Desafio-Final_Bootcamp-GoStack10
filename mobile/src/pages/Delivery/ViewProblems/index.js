@@ -7,6 +7,7 @@ import api from '../../../services/api';
 import {
   Container,
   TopBg,
+  BG,
   Content,
   Title,
   ProblemList,
@@ -41,17 +42,19 @@ export default function ViewProblems({ route }) {
   return (
     <Container>
       <TopBg />
-      <Content>
-        <Title>Encomenda {id}</Title>
-        <ProblemList
-          data={data}
-          keyExtractor={(item) => String(item.id)}
-          renderItem={({ item }) => renderItem(item)}
-          ListEmptyComponent={() => (
-            <Empty>Nenhuma problema nessa encomenda</Empty>
-          )}
-        />
-      </Content>
+      <BG>
+        <Content>
+          <Title>Encomenda {id}</Title>
+          <ProblemList
+            data={data}
+            keyExtractor={(item) => String(item.id)}
+            renderItem={({ item }) => renderItem(item)}
+            ListEmptyComponent={() => (
+              <Empty>Nenhuma problema nessa encomenda</Empty>
+            )}
+          />
+        </Content>
+      </BG>
     </Container>
   );
 }

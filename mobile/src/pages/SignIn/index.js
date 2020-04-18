@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {useDispatch, useSelector} from 'react-redux';
+import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 import logo from '../../assets/logo.png';
 import {
@@ -11,7 +11,7 @@ import {
   SubmitButton,
 } from './styles';
 
-import {signInRequest} from '../../store/modules/auth/actions';
+import { signInRequest } from '../../store/modules/auth/actions';
 
 export default function SignIn() {
   const dispatch = useDispatch();

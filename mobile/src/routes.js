@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 import * as React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import {useSelector} from 'react-redux';
-import {TouchableOpacity} from 'react-native';
+import { useSelector } from 'react-redux';
+import { TouchableOpacity } from 'react-native';
 
 import SignIn from './pages/SignIn';
 import Dashboard from './pages/Dashboard';
@@ -32,12 +32,18 @@ export default function Routes() {
           headerLeftContainerStyle: {
             marginLeft: 20,
           },
-        }}>
-        <Stack.Screen name="Dashboard" component={Dashboard} />
+        }}
+      >
+        <Stack.Screen
+          name="Dashboard"
+          component={Dashboard}
+          options={{ headerShown: false }}
+        />
         <Stack.Screen
           name="Details"
           component={Details}
-          options={({navigation}) => ({
+          options={({ navigation }) => ({
+            headerTitleAlign: 'center',
             title: 'Detalhes da encomenda',
             headerLeft: () => (
               <TouchableOpacity onPress={() => navigation.goBack()}>
@@ -49,7 +55,8 @@ export default function Routes() {
         <Stack.Screen
           name="AddProblem"
           component={AddProblem}
-          options={({navigation}) => ({
+          options={({ navigation }) => ({
+            headerTitleAlign: 'center',
             title: 'Informar problema',
             headerLeft: () => (
               <TouchableOpacity onPress={() => navigation.goBack()}>
@@ -61,7 +68,8 @@ export default function Routes() {
         <Stack.Screen
           name="ViewProblems"
           component={ViewProblems}
-          options={({navigation}) => ({
+          options={({ navigation }) => ({
+            headerTitleAlign: 'center',
             title: 'Visualizar problemas',
             headerLeft: () => (
               <TouchableOpacity onPress={() => navigation.goBack()}>
@@ -73,7 +81,8 @@ export default function Routes() {
         <Stack.Screen
           name="ConfirmDelivery"
           component={ConfirmDelivery}
-          options={({navigation}) => ({
+          options={({ navigation }) => ({
+            headerTitleAlign: 'center',
             title: 'Confirmar entrega',
             headerLeft: () => (
               <TouchableOpacity onPress={() => navigation.goBack()}>
@@ -92,13 +101,14 @@ export default function Routes() {
         tabBarOptions={{
           activeTintColor: '#7d40e7',
           inactiveTintColor: '#999',
-        }}>
+        }}
+      >
         <Tabs.Screen
           name="Delivery"
           component={Delivery}
           options={{
             tabBarLabel: 'Entregas',
-            tabBarIcon: ({color}) => (
+            tabBarIcon: ({ color }) => (
               <Icon name="list" size={20} color={color} />
             ),
           }}
@@ -108,7 +118,7 @@ export default function Routes() {
           component={Profile}
           options={{
             tabBarLabel: 'Meu perfil',
-            tabBarIcon: ({color}) => (
+            tabBarIcon: ({ color }) => (
               <Icon name="person" size={20} color={color} />
             ),
           }}
