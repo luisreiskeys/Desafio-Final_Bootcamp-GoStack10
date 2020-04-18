@@ -68,6 +68,20 @@ Pronto o backend já está pronto para o uso, agora vamos para a parte web da ap
 
  - Paginação para todas as listagens
 
+### tecnologias aprendidas e aplicadas
+
+- Node
+- Express
+- Sequelize
+- Docker
+- Redis
+- Bequeue
+- Nodemailer
+- handlebars
+- eslint
+- prettier
+- nodemon
+
 
 ## WEB
 
@@ -88,6 +102,16 @@ A aplicação vai se iniciar na tela de login. Faça login com user e senha cria
 
  - Todas as listagem possuem paginação e filtro
  - Se o entregador for cadastrado sem foto. Será gerado uma imagem com as iniciais dele utilizando a api https://ui-avatars.com/
+
+### tecnologias aprendidas e aplicadas
+
+- ReactJS
+- eslint
+- prettier
+- redux
+- redux-saga
+- redux-persist
+- styled-components
 
 ## Mobile
 
@@ -111,6 +135,7 @@ react-native run-ios
 ### Opcionais desenvolvidos no mobile
 
 - Toast. Desenvolvi um Toast inspirado no toastfy usado na web. O Toast foi adicionado no index do projeto.
+- A opção de retirar a encomenda eu coloquei no canto superior direito do card da encomenda, na listagem das encomendas como se pode ver na primeira imagens das capturas de tela ao final desse documento.
 
 ```
 <Provider store={store}>
@@ -144,13 +169,24 @@ Obs: No IOS ele funciona de forma global como mostrado no exemplo acima. No Andr
   <img alt="Fastfeet" title="Fastfeet" src="assets/toast.gif" width="300px" />
 </h1>
 
+### tecnologias aprendidas e aplicadas
+
+- React Native
+- eslint
+- prettier
+- redux
+- redux-saga
+- redux-persist
+- styled-components
+
 ## Capturas de algumas telas da solução
 <img alt="Fastfeet" title="Fastfeet" src="assets/web2.png" width="100%" />
 <img alt="Fastfeet" title="Fastfeet" src="assets/web3.png" width="100%" />
 <div>
-<img alt="Fastfeet" title="Fastfeet" src="assets/mobile2.png" width="300px" style="display:inline" />
-<img alt="Fastfeet" title="Fastfeet" src="assets/mobile1.png" width="300px" style="display:inline"/>
-<img alt="Fastfeet" title="Fastfeet" src="assets/mobile3.png" width="300px" style="display:inline"/>
+<img alt="Fastfeet" title="Fastfeet" src="assets/mobile4.png" width="250px" style="display:inline" />
+<img alt="Fastfeet" title="Fastfeet" src="assets/mobile2.png" width="250px" style="display:inline" />
+<img alt="Fastfeet" title="Fastfeet" src="assets/mobile1.png" width="250px" style="display:inline"/>
+<img alt="Fastfeet" title="Fastfeet" src="assets/mobile3.png" width="250px" style="display:inline"/>
 <div>
 
 
