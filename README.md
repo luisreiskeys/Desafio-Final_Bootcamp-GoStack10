@@ -143,6 +143,15 @@ Obs: No IOS ele funciona de forma global como mostrado no exemplo acima. No Andr
 <h1 align="center">
   <img alt="Fastfeet" title="Fastfeet" src="assets/toast.gif" width="300px" />
 </h1>
+
+## Capturas de telas
+<img alt="Fastfeet" title="Fastfeet" src="assets/web2.png" width="300px" />
+<img alt="Fastfeet" title="Fastfeet" src="assets/web3.png" width="300px" />
+<img alt="Fastfeet" title="Fastfeet" src="assets/mobile2.png" width="300px" />
+<img alt="Fastfeet" title="Fastfeet" src="assets/mobile1.png" width="300px" />
+<img alt="Fastfeet" title="Fastfeet" src="assets/mobile3.png" width="300px" />
+
+
 ## 📝 Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
