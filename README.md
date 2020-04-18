@@ -89,10 +89,30 @@ A aplicação vai se iniciar na tela de login. Faça login com user e senha cria
  - Todas as listagem possuem paginação e filtro
  - Se o entregador for cadastrado sem foto. Será gerado uma imagem com as iniciais dele utilizando a api https://ui-avatars.com/
 
+## Mobile
+
+Acesse a pasta mobile e rode o seguinte comando para instalar as dependências
+
+```
+  yarn
+```
+Agora para instalar os pods ( Apenas para IOS ) rode
+
+```
+cd ios && pod install && cd ..
+```
+
+Agora basta iniciar a aplicação 
+
+```
+react-native run-ios
+```
+
+
 ## 📝 Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
 ---
 
-Feito com ♥ by Luis Reis :wave: Tks ##Rocketseat 
+Feito com ♥ by Luis Reis :wave: Tks to Rocketseat 
