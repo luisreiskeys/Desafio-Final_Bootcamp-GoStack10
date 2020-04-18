@@ -84,7 +84,7 @@ Agora para iniciar a aplicação WEB basta rodar:
 
 A aplicação vai se iniciar na tela de login. Faça login com user e senha criados via seeds no processo excutado anteriormente no backend
 
-### Opcionais dfesenvolvidos no sistema web
+### Opcionais desenvolvidos no sistema web
 
  - Todas as listagem possuem paginação e filtro
  - Se o entregador for cadastrado sem foto. Será gerado uma imagem com as iniciais dele utilizando a api https://ui-avatars.com/
@@ -108,7 +108,41 @@ Agora basta iniciar a aplicação
 react-native run-ios
 ```
 
+### Opcionais desenvolvidos no mobile
 
+- Toast. Desenvolvi um Toast inspirado no toastfy usado na web. O Toast foi adicionado no index do projeto.
+
+```
+<Provider store={store}>
+  <PersistGate persistor={persistor}>
+    <Toast duration={4000} />
+    <StatusBar barStyle="light-content" backgroundColor="#7D40E7" />
+    <Routes />
+  </PersistGate>
+</Provider>
+
+```
+
+As mensagens são disparadas usando o dispatch do react-redux ou o put do redux-saga
+
+```
+yield put(
+  showToast('error', 'erro ao fazer login, usuário não encontrado')
+);
+```
+```
+dispatch(
+  showToast(
+    'error',
+    'Erro ao tentar fazer o upload da imagem, tente novamente mais tarde'
+  )
+);
+```
+Obs: No IOS ele funciona de forma global como mostrado no exemplo acima. No Android o component precisa ser adicionado em cada página onde será executado. Nessa entrega estou enviando a configuração do IOS porque foi como eu desenvolvi toda a aplicação. Assim que esse erro for corrigido esse repositório será atualizado.
+
+<h1 align="center">
+  <img alt="Fastfeet" title="Fastfeet" src="assets/toast.gif" width="300px" />
+</h1>
 ## 📝 Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
