@@ -6,6 +6,7 @@ export const ActionList = styled.div`
   position: absolute;
   top: ${(props) => `${props.coords.y + 25}px`};
   left: ${(props) => `${props.coords.x - 75}px`};
+  width: 150px;
   padding: 15px 0px;
   background: #fff;
   border-radius: 4px;
