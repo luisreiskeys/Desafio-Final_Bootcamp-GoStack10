@@ -1,9 +1,16 @@
 /* eslint-disable react/destructuring-assignment */
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, Dimensions, Platform } from 'react-native';
+import { Dimensions, Platform } from 'react-native';
 import Animated, { Easing } from 'react-native-reanimated';
 import { useSelector, useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
+
+import {
+  Container,
+  MessageContainer,
+  Message,
+  ProgressBottomBar,
+} from './styles';
 
 import { resetToast } from '../../store/modules/toast/actions';
 
@@ -11,43 +18,9 @@ export default function Toast(props) {
   const toast = useSelector((state) => state.toast);
   const dispatch = useDispatch();
 
-  const styles = (styleProps) =>
-    StyleSheet.create({
-      default: {
-        display: styleProps.display,
-        position: 'absolute',
-        backgroundColor: styleProps.bgByType,
-        padding: 7,
-        borderRadius: 4,
-        alignSelf: 'center',
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginHorizontal: 40,
-      },
-      msgContainer: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        marginBottom: 10,
-      },
-      txt: {
-        color: '#FFF',
-        marginLeft: 7,
-        fontSize: 18,
-        marginHorizontal: 20,
-      },
-      border: {
-        height: 3,
-        backgroundColor: '#fff',
-        flex: 1,
-        position: 'absolute',
-        alignSelf: 'stretch',
-        right: 0,
-        bottom: 0,
-      },
-    });
-
   const [pos] = useState(new Animated.Value(-350));
   const [leftBorder] = useState(new Animated.Value(0));
+
   const typesColors = {
     success: '#4caf50',
     warn: '#fd951f',
@@ -121,19 +94,16 @@ export default function Toast(props) {
   }
 
   return (
-    <Animated.View
-      style={[
-        styles(dinamicStyle)[dinamicStyle.type],
-        { ...zIndex(100), transform: [{ translateY: pos }] },
-      ]}
+    <Container
+      style={{ ...zIndex(100), transform: [{ translateY: pos }] }}
+      dinamicStyle={dinamicStyle}
+      type={props.type}
     >
-      <View style={styles(dinamicStyle).msgContainer}>
-        <Text style={styles(dinamicStyle).txt}>{msg}</Text>
-      </View>
-      <Animated.View
-        style={[styles(dinamicStyle).border, { left: leftBorder }]}
-      />
-    </Animated.View>
+      <MessageContainer>
+        <Message>{msg}</Message>
+      </MessageContainer>
+      <ProgressBottomBar style={{ left: leftBorder }} />
+    </Container>
   );
 }
 
