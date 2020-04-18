@@ -113,8 +113,15 @@ export default function Toast(props) {
     }
   }, [toast]);
 
+  function zIndex(val) {
+    return Platform.select({
+      ios: { zIndex: val },
+      android: { elevation: val },
+    });
+  }
+
   return (
-    <View style={{ zIndex: 1000 }}>
+    <View style={{ ...zIndex(100) }}>
       <Animated.View
         style={[
           styles(dinamicStyle)[dinamicStyle.type],
