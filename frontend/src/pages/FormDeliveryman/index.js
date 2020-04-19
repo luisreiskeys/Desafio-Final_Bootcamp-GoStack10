@@ -30,6 +30,9 @@ export default function FormDeliveryman({ location }) {
         .then(() => {
           toast.success('Entregador editado com sucesso');
           history.push('/deliveryman');
+        })
+        .catch((err) => {
+          toast.error(err.response.data.error);
         });
     } else {
       api
@@ -41,6 +44,9 @@ export default function FormDeliveryman({ location }) {
         .then(() => {
           toast.success('Entregador cadastrado com sucesso');
           history.push('/deliveryman');
+        })
+        .catch((err) => {
+          toast.error(err.response.data.error);
         });
     }
   }

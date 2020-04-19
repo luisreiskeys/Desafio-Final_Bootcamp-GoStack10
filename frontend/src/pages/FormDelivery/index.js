@@ -66,6 +66,9 @@ export default function FormDelivery({ location }) {
         .then(() => {
           toast.success('Encomenda editada com sucesso');
           history.push('/deliveries');
+        })
+        .catch((err) => {
+          toast.error(err.response.data.error);
         });
     } else {
       api
@@ -77,6 +80,9 @@ export default function FormDelivery({ location }) {
         .then(() => {
           toast.success('Encomenda cadastrada com sucesso');
           history.push('/deliveries');
+        })
+        .catch((err) => {
+          toast.error(err.response.data.error);
         });
     }
   }

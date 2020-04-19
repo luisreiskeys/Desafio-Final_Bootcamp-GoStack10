@@ -51,6 +51,9 @@ export default function FormRecipient({ location }) {
         .then(() => {
           toast.success('Destinatário editado com sucesso');
           history.push('/recipients');
+        })
+        .catch((err) => {
+          toast.error(err.response.data.error);
         });
     } else {
       api
@@ -66,6 +69,9 @@ export default function FormRecipient({ location }) {
         .then(() => {
           toast.success('Destinatário cadastrado com sucesso');
           history.push('/recipients');
+        })
+        .catch((err) => {
+          toast.error(err.response.data.error);
         });
     }
   }
